@@ -1,0 +1,101 @@
+$noto-font: bold 1.5rem 'Noto Sans', sans-serif;
+
+@import 'header';
+@import 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height:100%;
+} 
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.main__title__h3{
+    margin: 10px 0px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.galeria__grid__main{
+    img{
+        height: 300px;
+        width: 300px;
+    }
+
+    img:hover{
+        transform: scale(1.050);
+    }
+
+} 
+
+.galeria__h1{
+font-family: 'Noto Sans', sans-serif;
+margin:5px 0px 20px 10px
+}
+
+.galeria__grid__main{
+display: grid;
+grid-template-rows: repeat(16, 300px);
+grid-gap: 1rem;
+justify-items: center;    
+margin-bottom: 15px;
+}
+
+
+
+.galeria__bottom{
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+
+    
+
+    .main__title__h3{
+        margin: 10px 0px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 2.5rem;
+    }
+
+    .galeria__grid__main{
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(8, 300px);
+        justify-content: center;
+    }
+
+}
+.galeria__body{
+    background-color: #f79092;
+}
+
+
+@media screen and (min-width: 1024px){
+    
+    .main__title-h3{
+        font-size: 30px;
+    }
+
+    .galeria__grid__main{
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(4, 300px);
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
