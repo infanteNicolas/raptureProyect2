@@ -1,0 +1,121 @@
+$noto-font: bold 1.5rem 'Noto Sans', sans-serif;
+
+#grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+header{
+    padding: 10px;
+    background-color: #F7F7F7;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.gradiente{
+    background-image: linear-gradient(rgb(6, 99, 136), rgb(3, 8, 70));
+}
+
+.header__title{
+    display: flex;
+    align-items: center;
+
+    img{
+        width: 150px;
+        height: 150px;
+    }
+
+    span{
+        font-family: 'Quicksand', sans-serif;
+        font-size: large;
+    }   
+}
+
+.header__menu__nav__ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-family: $noto-font;
+
+    li:hover{
+        transform: scale(1.050);
+    }
+
+    li {
+        a{
+            text-decoration: none;
+            padding: 5px 5px;
+            font-size: 0.75rem;
+            color: rgb(54, 20, 20) ;
+            font-family: $noto-font;
+        }
+
+        a:visited{
+            color: rgb(54, 20, 20);
+        }
+
+        a:hover{
+            color: rgb(105, 103, 103);
+        }
+
+        a:active{
+            color:#0000FF
+        }
+    }
+
+    li:hover{
+        transform: scale(1.050);
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+
+    #grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .header__title{
+        display: flex;
+        align-items: center;
+    }
+    
+    .header__title span{
+        font-size: 2rem;
+    }
+
+    .header__menu{
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .header__menu__nav__ul li a{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .header__title span{
+        font-size: 60px;
+    }
+
+    .header__menu__nav__ul li a{
+        font-size: 1.75rem;
+        font-family: $noto-font;
+    }
+
+    .backgroundImage{
+        height: 600px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color:  #464646;
+    }
+
+    .backgroundImage h1{
+        font-size: 50px;
+    }
+
+}
