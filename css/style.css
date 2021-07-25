@@ -33,7 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  font-family: bold 1.5rem "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .header__menu__nav__ul li:hover {

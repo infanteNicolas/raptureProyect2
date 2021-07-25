@@ -1,6 +1,8 @@
 $noto-font: bold 1.5rem 'Noto Sans', sans-serif;
+$img-width:75px;
+$img-height: 300px;
 
-#grid{
+#grid {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -21,8 +23,8 @@ header{
     align-items: center;
 
     img{
-        width: 150px;
-        height: 150px;
+        width: $img-width*2;
+        height: $img-height/2;
     }
 
     span{
@@ -35,7 +37,7 @@ header{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    font-family: $noto-font;
+    font-family: 'Noto Sans', sans-serif;
 
     li:hover{
         transform: scale(1.050);
