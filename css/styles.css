@@ -433,6 +433,7 @@ header{
 
 .nosotros__map{
     width: 100%;
+    padding-top: 20px;
 }
 
 .galeria__bottom{
@@ -440,6 +441,7 @@ header{
     font-family: 'Noto Sans', sans-serif;
     margin-bottom: 30px;
 }
+
 
 
 /** css insumos **/
