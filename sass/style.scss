@@ -87,6 +87,7 @@ margin-bottom: 15px;
 
     div img{
         width: 100%;
+        border-radius: 5%;
     }
 
     div p {
@@ -147,17 +148,24 @@ margin-bottom: 15px;
     text-align: center;
 }
 
-
-
-
-
-
-
 .galeria__bottom{
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     margin-bottom: 30px;
 }
+
+
+.carousel .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+  }
 
 @media screen and (min-width: 768px) {
 
