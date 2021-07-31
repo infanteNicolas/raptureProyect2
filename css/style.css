@@ -386,6 +386,13 @@ html {
     grid-template-rows: repeat(4, 300px);
     justify-content: center;
   }
+  .grid__main {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 1rem 3rem;
+    justify-content: center;
+    margin-top: 20px;
+  }
   .grid__main div p {
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
