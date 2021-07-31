@@ -38,6 +38,23 @@ html{
 
 } 
 
+.backgroundImage{
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:  #464646;
+    background-image: url(https://i.ibb.co/Wc3pz1V/wallpaperbetter-com-1920x1080.jpg);
+    
+        h1{
+        color: rgb(255, 241, 255);
+        margin-left: 20px;
+        padding-top: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.5rem;
+    }
+
+}
+
 .galeria__h1{
 font-family: 'Noto Sans', sans-serif;
 margin:5px 0px 20px 10px
@@ -51,6 +68,89 @@ justify-items: center;
 margin-bottom: 15px;
 }
 
+.main__texto{
+    padding: 0px 5px;
+    margin: 0px 10px;
+    text-align: justify;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main__examples{
+    margin-top: 10px;
+}
+
+.grid__main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "box1" "box4" "box2" "box5" "box3" "box6";
+
+    div img{
+        width: 100%;
+    }
+
+    div p {
+        text-align: justify;
+        margin: 0px 5px 10px 5px;
+    }    
+
+}
+
+.box-1{
+    grid-area: box1;
+}
+
+.box-2{
+    grid-area: box2;
+}
+
+.box-3{
+    grid-area: box3;
+}
+
+.box-4{
+    grid-area: box4;
+}
+
+.box-5{
+    grid-area: box5;
+}
+
+.box-6{
+    grid-area: box6;
+}
+
+.main__aplications{
+    margin-top: 5px;
+    background-color: #C7DCF3;
+    padding-bottom: 30px;
+
+    h3{
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 2rem;
+        padding-top: 15px;
+        margin-top: 15px;
+    }
+
+    hr{
+        border: 0;
+        height: 1px;
+        margin-bottom: 10px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }    
+
+}
+
+.main__aplications__examples{
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+
+
+
+
 
 
 .galeria__bottom{
@@ -61,13 +161,76 @@ margin-bottom: 15px;
 
 @media screen and (min-width: 768px) {
 
-    
+
 
     .main__title__h3{
         margin: 10px 0px;
         font-family: 'Noto Sans', sans-serif;
         font-size: 2.5rem;
     }
+
+    .main__title__h3{
+        margin: 10px 0px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 2.5rem;
+    }
+
+    .backgroundImage{
+        height: 400px;
+    }
+
+    .grid__main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .box-1{
+        grid-column: 1/1;
+        grid-row: 1/1;
+
+        :hover{
+            transform: scale(1.050);
+        }
+    }
+
+    .box-2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+
+        :hover{
+            transform: scale(1.050);
+        }
+    }
+
+    .box-3{
+        grid-column: 3/3;
+        grid-row: 1/2;
+
+        :hover{
+            transform: scale(1.050);
+        }
+    }
+
+    
+    
+    .box-4{
+        grid-column: 1/1;
+        grid-row: 2/2;
+    }
+    
+    .box-5{
+        grid-column: 2/3;
+        grid-row: 2/2;
+    }
+    
+    .box-6{
+        grid-column: 3/3;
+        grid-row: 2/2;
+    }
+    
+
+
+
 
     .galeria__grid__main{
         grid-template-columns: repeat(2, 300px);
@@ -82,7 +245,34 @@ margin-bottom: 15px;
 
 
 @media screen and (min-width: 1024px){
+
+    .header__title span{
+        font-size: 60px;
+    }
+
+    .header__menu__nav__ul li a{
+        font-size: 1.75rem;
+    }
+
+    .backgroundImage{
+        height: 600px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color:  #464646;
+
+        h1{
+            font-size: 50px;
+        }
+    }
     
+    .main__texto{
+        padding: 0px 10px;
+        margin: 0px 20px;
+        text-align: justify;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
     .main__title-h3{
         font-size: 30px;
     }
@@ -91,6 +281,12 @@ margin-bottom: 15px;
         grid-template-columns: repeat(3, 300px);
         grid-template-rows: repeat(4, 300px);
         justify-content: center;
+    }
+
+    .grid__main div p{
+        text-align: justify;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
     }
 
 }
