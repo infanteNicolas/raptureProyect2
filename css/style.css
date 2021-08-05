@@ -164,6 +164,23 @@ html {
   scroll-behavior: smooth;
 }
 
+.icono__subir {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  top: 90vh;
+  z-index: 90;
+}
+
+.icono__subir img {
+  opacity: 50%;
+}
+
+.icono__subir img:hover {
+  opacity: 100%;
+}
+
 .main__title__h3 {
   margin: 10px 0px;
   font-family: 'Noto Sans', sans-serif;

@@ -16,6 +16,21 @@ html{
     scroll-behavior: smooth;
 }
 
+.icono__subir{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    top: 90vh;
+    z-index: 90;
+    img{
+        opacity: 50%;
+    }
+    img:hover{
+        opacity: 100%;
+    }
+}
+
 
 
 .main__title__h3{
