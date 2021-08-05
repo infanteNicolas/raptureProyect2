@@ -510,13 +510,17 @@ header{
 
 /** css contacto **/
 
-.contacto__section{
-    margin: 10px 15px 25px 15px;
-}
-
 .contacto__main{
     font-family: 'Noto Sans', sans-serif;
     margin: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.contacto__section{
+    margin: 10px 15px 25px 15px;
 }
 
 .formulario__items{
@@ -527,4 +531,71 @@ header{
     margin: 5px 0px 25px 10px;
 }
 
+.h4__interes{
+    padding-top: 10px;
+    margin-bottom: 8px;
+}
 
+.formulario__imagen img{
+    width: 250px;
+    height: 250px;
+    border-radius: 2%;
+    
+}
+
+.formulario__imagen img:hover{
+    transform: scale(1.050);
+}
+
+@-webkit-keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }
+  @keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }
+  .hvr-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
+@media screen and (min-width: 768px){
+    .contacto__main{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+
+    .formulario__imagen img{
+        width: 350px;
+        height: 350px;
+    }
+   
+
+}

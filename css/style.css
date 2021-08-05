@@ -175,6 +175,7 @@ html {
 .galeria__grid__main img {
   height: 300px;
   width: 300px;
+  border-radius: 5%;
 }
 
 .galeria__grid__main img:hover {

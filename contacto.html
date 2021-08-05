@@ -56,11 +56,12 @@
     </div>
 
     <main class="contacto__main">
-        <div>
-            <h4>Asegúrate de completar bien todo así te podemos asegurar la mejor atención</h4>
-        </div>
+        
 
         <section class="contacto__section">
+            <div>
+                <h4>Asegúrate de completar bien todo así te podemos asegurar la mejor atención</h4>
+            </div>
             <form action="" method="POST" enctype="text/plain">
                 <fieldset class="fieldset__form">
                     <legend>
@@ -105,7 +106,7 @@
                 <!--Checkbox-->
                         <div class="formulario__items">
                             <div>
-                                <h4 style="margin-bottom: 0%;">Interés</h4>
+                                <h4 class="h4__interes">Interés</h4>
                                 <label for="check-1">Impresiones con Filamento PLA</label>
                                 <input id="check-1" type="checkbox" name="acepta-pla" value="1">
                             </div>
@@ -131,6 +132,10 @@
                 </fieldset>
             </form>
         </section>
+
+        <div class="formulario__imagen animate__animated animate__rubberBand hvr-buzz">
+            <img src="images/muestra/pikadrakeshiny.jpeg" alt="Pika Shiny">
+        </div>
     </main>
 
 
@@ -155,5 +160,13 @@
             </aside>
         </div>
     </footer>
+
+
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
