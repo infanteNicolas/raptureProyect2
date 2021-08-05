@@ -84,15 +84,17 @@ margin-bottom: 15px;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "box1" "box4" "box2" "box5" "box3" "box6";
+    justify-items: center;
+    align-items: center;
 
     div img{
-        width: 100%;
-        border-radius: 10%;
+        width: 280px;
+        border-radius: 10%;;
     }
 
     div p {
         text-align: justify;
-        margin: 0px 5px 10px 5px;
+        margin: 0px 10px 10px 10px;
     }    
 
 }
@@ -190,12 +192,13 @@ margin-bottom: 15px;
     .grid__main{
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
+        
     }
 
     .box-1{
         grid-column: 1/1;
         grid-row: 1/1;
-
+        
         :hover{
             transform: scale(1.050);
         }

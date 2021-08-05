@@ -226,16 +226,18 @@ html {
   grid-template-columns: auto;
   grid-template-rows: repeat(6, auto);
   grid-template-areas: "box1" "box4" "box2" "box5" "box3" "box6";
+  justify-items: center;
+  align-items: center;
 }
 
 .grid__main div img {
-  width: 100%;
+  width: 280px;
   border-radius: 10%;
 }
 
 .grid__main div p {
   text-align: justify;
-  margin: 0px 5px 10px 5px;
+  margin: 0px 10px 10px 10px;
 }
 
 .box-1 {
