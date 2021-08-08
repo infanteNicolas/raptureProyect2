@@ -33,11 +33,98 @@ header{
     }   
 }
 
+
+@media screen and (max-width: 760px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans', sans-serif;
+
+    }
+
+    .header__menu{
+        display: none;
+    }
+
+    .navResponsive{
+        
+        color: #000;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 91;
+        
+
+        .mainMenu{
+            display: flex;
+            list-style: none;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: top 1s ease;
+            display: none;
+            background-color: #F7F7F7;
+            
+            li{
+                a{
+                    display: inline-block;
+                    padding: 15px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: 'Noto Sans', sans-serif;
+                }
+            }
+        }
+
+        .openMenu{
+            cursor: pointer;  
+            font-size: 2rem;
+            cursor: pointer;
+
+        }
+
+        .mainMenu .closeMenu {
+            display: block;
+            position: absolute;
+            font-size: 2rem;
+            cursor: pointer;
+            top: 20px;
+            right: 20px;
+        }
+
+        .openMenu{
+            display: block;
+        }
+
+        .mainMenu{
+            li{
+                a:hover{
+                    font-size: 1.6rem;
+                }
+                a:visited{
+                    color: rgb(54, 20, 20);
+                }
+
+                
+            }
+        }
+        
+    }
+
+}
+
+
 .header__menu__nav__ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif; 
 
     li:hover{
         transform: scale(1.050);
@@ -95,6 +182,18 @@ header{
     .header__menu__nav__ul li a{
         font-size: 1.25rem;
     }
+
+    .openMenu {
+        display: none;
+    }
+    .closeMenu{
+        display: none;
+    }
+
+    .navResponsive{
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 1024px){
@@ -118,6 +217,13 @@ header{
 
     .backgroundImage h1{
         font-size: 50px;
+    }
+
+    .openMenu {
+        display: none;
+    }
+    .closeMenu{
+        display: none;
     }
 
 }

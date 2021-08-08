@@ -7,6 +7,9 @@
     <meta name="description" content="Impresiones en 3D con variedad de filamentos e insumos de uso personal. Visitanos y tentate! ">
     <meta name="keywords" content="IMPRESIONES, 3D, FILAMENTOS, REGALOS, INSUMOS, DECORACION">
 
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/bbd3cbdc06.js" crossorigin="anonymous"></script>
+
     <!--Boostrap links-->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
@@ -33,23 +36,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!--Style.css-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">    
 
     <title>Rapture 3d | Impresiones 3D</title>
 </head>
 
 <body>
-    
 
     <div>
         <header id="grid" class="header">
+
+            
 
             <div class="header__title">
                 <img src="images/icon/white.jpeg" alt="icono" class="menu__ico animate__animated animate__fadeInLeft">
                 <span class="animate__animated animate__fadeInDown">Rapture 3D</span>
             </div>
 
-            <div class="header__menu">
+            <div class="header__menu ">
+               
                 <nav class="header__menu__nav ">
                     <ul class="header__menu__nav__ul animate__animated animate__fadeInRightBig">
                         <li><a href="index.html">Home</a></li>
@@ -57,12 +62,32 @@
                         <li><a href="nosotros.html">Nosotros</a></li>
                         <li><a href="insumos.html">Insumos</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
+                        
                     </ul>
                 </nav>
             </div>
+
+            <nav class="navResponsive">
+                <div class="openMenu">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul class="mainMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="insumos.html">Insumos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <div class="closeMenu">
+                        <i class="fa fa-times"></i>
+                    </div>
+                </ul>
+            </nav>
+            
         </header>        
     </div>
 
+
+    
     <div class="icono__subir">
         <a href="#grid"><img src="images/icon/arrow.svg" alt="subir"></a> 
     </div>
@@ -238,8 +263,8 @@
 
 
 
-
-    <script src="js/wow.min.js"></script>
+    
+    <script src="js/app.js"></script>
     <script>
     new WOW().init();
     </script>

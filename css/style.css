@@ -29,6 +29,68 @@ header {
   font-size: large;
 }
 
+@media screen and (max-width: 760px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .header__menu {
+    display: none;
+  }
+  .navResponsive {
+    color: #000;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Noto Sans', sans-serif;
+    z-index: 95;
+  }
+  .navResponsive .mainMenu {
+    display: flex;
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s ease;
+    display: none;
+    background-color: #F7F7F7;
+  }
+  .navResponsive .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .navResponsive .openMenu {
+    cursor: pointer;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .navResponsive .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+  }
+  .navResponsive .openMenu {
+    display: block;
+  }
+  .navResponsive .mainMenu li a:hover {
+    font-size: 1.6rem;
+  }
+  .navResponsive .mainMenu li a:visited {
+    color: #361414;
+  }
+}
+
 .header__menu__nav__ul {
   display: flex;
   justify-content: space-between;
@@ -83,6 +145,15 @@ header {
   .header__menu__nav__ul li a {
     font-size: 1.25rem;
   }
+  .openMenu {
+    display: none;
+  }
+  .closeMenu {
+    display: none;
+  }
+  .navResponsive {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -102,6 +173,12 @@ header {
   }
   .backgroundImage h1 {
     font-size: 50px;
+  }
+  .openMenu {
+    display: none;
+  }
+  .closeMenu {
+    display: none;
   }
 }
 
