@@ -294,7 +294,7 @@ html {
   margin-left: 20px;
   padding-top: 30px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .galeria__h1 {
@@ -318,7 +318,7 @@ html {
 }
 
 .main__examples {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .grid__main {
@@ -333,6 +333,8 @@ html {
 .grid__main div img {
   width: 280px;
   border-radius: 10%;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .grid__main div p {
