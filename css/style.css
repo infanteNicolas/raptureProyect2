@@ -91,6 +91,9 @@ header {
   .navResponsive .mainMenu li a:visited {
     color: #361414;
   }
+  .navResponsive .mainMenu li a:link {
+    color: #361414;
+  }
 }
 
 .header__menu__nav__ul {
